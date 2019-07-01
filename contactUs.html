@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogja Car Rent</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/icon/car.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="captcha.min.js"></script>
+
+    <!-- -------css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
+
+</head>
+
+<body>
+
+    <!-- ---------------------------------Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Jogja CarRent</a>
+
+        <div class="navbar navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#masuk">
+                    <a href="#" class="font-color">Sign In</a>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- -------Signin -->
+    <!-- Modal login -->
+    <div id="masuk" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign In to CarRent</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="signup.html" class="font-color">
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                    </a>
+                    <a href="catalog.html" class="font-color">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.324745794204!2d110.40991408441977!3d-7.757392171843735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b967a22331%3A0x5027a76e3569a00!2sCaturtunggal%2C+Kec.+Depok%2C+Kabupaten+Sleman%2C+Daerah+Istimewa+Yogyakarta!5e0!3m2!1sid!2sid!4v1561474812631!5m2!1sid!2sid" width="1080" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <iframe width="1080" height="450" src="https://www.youtube.com/embed/DFIczD1MmRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+    </div>
+    <div class="captcha">
+        <form id="my-form" class="captcha">
+            <h1>Komentar</h1>
+            <input type="email" name="email" placeholder="Email Anda.." required>
+            <textarea name="message" placeholder="Komentar Anda.." required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#my-form').captcha();
+
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark">
+        <div style="background-color: teal;">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0"><i class="fas fa-info-circle"></i> Get connected with us on social networks!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container font-color text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Car Rental</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Kami menyediakan layanan sewa mobil untuk kenyamanan anda belibur di kota jogja!. kami menawarakan berbagai jenis mobil sesuai dengan kebutuhan anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Jasa</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-car"></i>
+                        <a href="catalog.html">   Catalog Mobil</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Social Media</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-instagram"></i>
+                        <a href="#!">Instagram</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-twitter"></i>
+                        <a href="#!">Twitter</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-google-plus-g"></i>
+                        <a href="#!">Google</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i>jl. Dongkelan No. 350</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> ikhwancandraa@gmail.com </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +62 87 8126 34 344 </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> +62 87 8126 34 344 </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 font-color">© 2019 Copyright:
+            <a href="www.ikhwancandraa.github.io/kelompok15_FP"> CarRent.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
