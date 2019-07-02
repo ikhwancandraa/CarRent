@@ -16,6 +16,7 @@ angular.module('myApp')
     { id :  10, category : "Daihatsu Sigra",    description : "Tanpa Driver",   price :  300000, qty : 1 },
     { id :  11, category : "Suzuki APV",        description : "Mobil+Driver",   price :  300000, qty : 1 },
     { id :  12, category : "Suzuki APV",        description : "Tanpa Driver",   price :  300000, qty : 1 },
+    { id :  13, category : "Suzuki VARIO",        description : "Sendiri",   price :  3000000, qty : 1 },
    
   ];
   
